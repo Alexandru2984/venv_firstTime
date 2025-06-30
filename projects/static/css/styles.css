@@ -1,0 +1,97 @@
+/* Stiluri generale pentru corp și font */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Stil pentru titlu */
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Stil pentru lista neordonată */
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Stil pentru fiecare element al listei (proiect) */
+li {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Stil pentru link-ul fiecărui proiect */
+li a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+/* Stil pentru descrierea proiectului */
+li span {
+    color: #555;
+    font-size: 0.95em;
+}
+
+/* Stil pentru mesajul "Nu există proiecte publice" */
+li:empty { /* Acest selector va funcționa dacă blochezi complet elementul li gol */
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px dashed #ccc;
+}
+
+/* Stil responsiv pentru ecrane mai mici */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    li {
+        padding: 15px;
+    }
+
+    li a {
+        font-size: 1.1em;
+    }
+}
